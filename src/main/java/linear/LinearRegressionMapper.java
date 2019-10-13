@@ -19,6 +19,7 @@ public class LinearRegressionMapper extends Mapper<LongWritable, Text, LongWrita
     private FileInputStream fis = null;
     BufferedInputStream bis = null;
 
+    @Override
     public void setup(Context context)
     {
       //Read the distributed cache
@@ -27,7 +28,8 @@ public class LinearRegressionMapper extends Mapper<LongWritable, Text, LongWrita
       } catch (IOException e) { e.printStackTrace(); }
     }
 
-    public void map(LongWritable key, Text value, Context context)
+    @Override
+    protected void map(LongWritable key, Text value, Context context)
         throws IOException, InterruptedException {
 
       /**

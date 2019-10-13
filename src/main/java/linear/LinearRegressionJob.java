@@ -1,8 +1,6 @@
 package linear;
 
 import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.FloatWritable;
@@ -25,11 +23,7 @@ public class LinearRegressionJob {
       job.setJarByClass(LinearRegressionJob.class);
 
       //Try to load the theta values into the distributed cache
-      try {
-        DistributedCache.addCacheFile(new URI("/thesis/linear/theta.csv"), conf);
-      } catch (URISyntaxException e1) {
-        e1.printStackTrace();
-      }
+      DistributedCache.addCacheFile(new Path(args[0]).toUri(), job.getConfiguration());
 
       job.setMapperClass(LinearRegressionMapper.class);
       job.setReducerClass(LinearRegressionReducer.class);
@@ -44,9 +38,9 @@ public class LinearRegressionJob {
       job.setOutputFormatClass(TextOutputFormat.class);
 
       // path to input in HDFS
-      FileInputFormat.setInputPaths(job, new Path(args[0]));
+      FileInputFormat.setInputPaths(job, new Path(args[1]));
       // path to output in HDFS
-      FileOutputFormat.setOutputPath(job, new Path(args[1]));
+      FileOutputFormat.setOutputPath(job, new Path(args[2]));
 
       // Block until the job is completed.
       System.exit(job.waitForCompletion(true) ? 0 : 1);
