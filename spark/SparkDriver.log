@@ -1,0 +1,8 @@
+19/11/24 18:05:22 INFO KMeans: Initialization with k-means|| took 20.833 seconds.
+19/11/24 18:05:22 INFO KMeans: Iterations took 0.000 seconds.
+19/11/24 18:05:22 INFO KMeans: KMeans reached the max number of iterations: 0.
+19/11/24 18:05:22 INFO KMeans: The cost is 0.0.
+19/11/24 18:05:24 INFO KMeans: Initialization with k-means|| took 1.307 seconds.
+19/11/24 18:05:30 INFO KMeans: Iterations took 6.066 seconds.
+19/11/24 18:05:30 INFO KMeans: KMeans reached the max number of iterations: 35.
+19/11/24 18:05:30 INFO KMeans: The cost is 2.5148912816693962E8.
