@@ -1,8 +1,12 @@
-19/11/24 18:05:22 INFO KMeans: Initialization with k-means|| took 20.833 seconds.
-19/11/24 18:05:22 INFO KMeans: Iterations took 0.000 seconds.
-19/11/24 18:05:22 INFO KMeans: KMeans reached the max number of iterations: 0.
-19/11/24 18:05:22 INFO KMeans: The cost is 0.0.
-19/11/24 18:05:24 INFO KMeans: Initialization with k-means|| took 1.307 seconds.
-19/11/24 18:05:30 INFO KMeans: Iterations took 6.066 seconds.
-19/11/24 18:05:30 INFO KMeans: KMeans reached the max number of iterations: 35.
-19/11/24 18:05:30 INFO KMeans: The cost is 2.5148912816693962E8.
+19/11/25 19:09:49 INFO KMeans: Initialization with k-means|| took 5.359 seconds.
+19/11/25 19:09:50 INFO KMeans: Iterations took 1.559 seconds.
+19/11/25 19:09:50 INFO KMeans: KMeans converged in 15 iterations.
+19/11/25 19:09:50 INFO KMeans: The cost is 399.5083908557183.
+19/11/25 19:15:12 INFO KMeans: Initialization with k-means|| took 5.502 seconds.
+19/11/25 19:15:13 INFO KMeans: Iterations took 0.759 seconds.
+19/11/25 19:15:13 INFO KMeans: KMeans converged in 7 iterations.
+19/11/25 19:15:13 INFO KMeans: The cost is 427.42740768041733.
+19/11/25 19:16:53 INFO KMeans: Initialization with k-means|| took 5.636 seconds.
+19/11/25 19:16:54 INFO KMeans: Iterations took 0.579 seconds.
+19/11/25 19:16:54 INFO KMeans: KMeans converged in 5 iterations.
+19/11/25 19:16:54 INFO KMeans: The cost is 402.9649496328768.

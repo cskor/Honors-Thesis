@@ -19,22 +19,22 @@ object runKMeans {
     val parsedData = data.map(s => Vectors.dense(s.split(' ').map(_.toDouble))).cache()
 
     // Cluster the data into two classes using KMeans
-    val numClusters = 5
-    val numIterations = 35
+    val numClusters = args(1).toInt
+    val numIterations = args(2).toInt
     val model = new KMeans()
     
-    //Get the first clusters
-    model.setK(numClusters).setMaxIterations(0)
-    val startingClusters = model.run(parsedData)    
-    sc.parallelize( startingClusters.clusterCenters ).coalesce(1).saveAsTextFile(args(1))
-
     //Run the algorithm
     model.setK(numClusters).setMaxIterations(numIterations)
     val clusters = model.run(parsedData)
     
-    // Evaluate clustering by computing Within Set Sum of Squared Errors
-    val WSSSE = clusters.trainingCost
-    println(s"Within Set Sum of Squared Errors = $WSSSE")
+    //Save where the points are located -- potentially make this optional 
+    val ptsWithCluster = parsedData.map{ point => 
+                            val prediction = clusters.predict(point)
+                            (prediction, point.toString) }
+    ptsWithCluster.coalesce(1).saveAsTextFile(args(3))
+    
+    //Save what the centers are
+    sc.parallelize( clusters.clusterCenters ).coalesce(1).zipWithIndex.saveAsTextFile(args(4))
 
     sc.stop()
   }
