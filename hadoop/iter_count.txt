@@ -1,8 +1,10 @@
-Found 7 items
--rw-r--r--   3 cskor supergroup        194 2019-11-25 18:01 /thesis/results/_policy
-drwxr-xr-x   - cskor supergroup          0 2019-11-25 18:01 /thesis/results/clusteredPoints
-drwxr-xr-x   - cskor supergroup          0 2019-11-25 18:00 /thesis/results/clusters-0
-drwxr-xr-x   - cskor supergroup          0 2019-11-25 18:00 /thesis/results/clusters-1
-drwxr-xr-x   - cskor supergroup          0 2019-11-25 18:01 /thesis/results/clusters-2-final
-drwxr-xr-x   - cskor supergroup          0 2019-11-25 18:00 /thesis/results/data
-drwxr-xr-x   - cskor supergroup          0 2019-11-25 18:00 /thesis/results/random-seeds
+Found 9 items
+-rw-r--r--   3 cskor supergroup        194 2019-12-01 10:06 /thesis/results/_policy
+drwxr-xr-x   - cskor supergroup          0 2019-12-01 10:06 /thesis/results/clusteredPoints
+drwxr-xr-x   - cskor supergroup          0 2019-12-01 10:04 /thesis/results/clusters-0
+drwxr-xr-x   - cskor supergroup          0 2019-12-01 10:04 /thesis/results/clusters-1
+drwxr-xr-x   - cskor supergroup          0 2019-12-01 10:05 /thesis/results/clusters-2
+drwxr-xr-x   - cskor supergroup          0 2019-12-01 10:05 /thesis/results/clusters-3
+drwxr-xr-x   - cskor supergroup          0 2019-12-01 10:06 /thesis/results/clusters-4-final
+drwxr-xr-x   - cskor supergroup          0 2019-12-01 10:04 /thesis/results/data
+drwxr-xr-x   - cskor supergroup          0 2019-12-01 10:04 /thesis/results/random-seeds
