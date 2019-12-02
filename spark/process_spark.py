@@ -56,12 +56,10 @@ def sparkResults(filename, output, inputName):
 
 if __name__ == "__main__":
     # args = [ centers.txt, points.txt, sparkdriver.log, results.csv", input file name,  plot if present]
-
-    sparkCanopy = sparkGatherCanopies( sys.argv[1], sys.argv[2])
-    
     sparkResults( sys.argv[3], sys.argv[4], sys.argv[5] )
     
     if len(sys.argv) == 7:
+        sparkCanopy = sparkGatherCanopies( sys.argv[1], sys.argv[2])
         plotClusters(sparkCanopy, "Spark")
 
     print("FINISHED PROCESSING SPARK")

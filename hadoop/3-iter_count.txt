@@ -1,0 +1,8 @@
+Found 7 items
+-rw-r--r--   3 cskor supergroup        194 2019-12-01 20:17 /thesis/results/_policy
+drwxr-xr-x   - cskor supergroup          0 2019-12-01 20:18 /thesis/results/clusteredPoints
+drwxr-xr-x   - cskor supergroup          0 2019-12-01 20:17 /thesis/results/clusters-0
+drwxr-xr-x   - cskor supergroup          0 2019-12-01 20:17 /thesis/results/clusters-1
+drwxr-xr-x   - cskor supergroup          0 2019-12-01 20:17 /thesis/results/clusters-2-final
+drwxr-xr-x   - cskor supergroup          0 2019-12-01 20:16 /thesis/results/data
+drwxr-xr-x   - cskor supergroup          0 2019-12-01 20:17 /thesis/results/random-seeds

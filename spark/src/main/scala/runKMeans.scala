@@ -27,15 +27,19 @@ object runKMeans {
     model.setK(numClusters).setMaxIterations(numIterations)
     val clusters = model.run(parsedData)
     
-    //Save where the points are located -- potentially make this optional 
-    val ptsWithCluster = parsedData.map{ point => 
+    //Save where the points are located 
+    val plot = ( args.length == 6 )
+    
+    if(plot){
+        val ptsWithCluster = parsedData.map{ point => 
                             val prediction = clusters.predict(point)
                             (prediction, point.toString) }
-    ptsWithCluster.coalesce(1).saveAsTextFile(args(3))
+        ptsWithCluster.coalesce(1).saveAsTextFile(args(3))
     
-    //Save what the centers are
-    sc.parallelize( clusters.clusterCenters ).coalesce(1).zipWithIndex.saveAsTextFile(args(4))
-
+        //Save what the centers are
+        sc.parallelize( clusters.clusterCenters ).coalesce(1).zipWithIndex.saveAsTextFile(args(4))
+    }
+    
     sc.stop()
   }
 }

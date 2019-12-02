@@ -46,3 +46,836 @@
 19/12/01 09:58:29 INFO KMeans: Iterations took 0.429 seconds.
 19/12/01 09:58:29 INFO KMeans: KMeans converged in 4 iterations.
 19/12/01 09:58:29 INFO KMeans: The cost is 476.2378357325226.
+19/12/01 14:35:51 ERROR YarnClusterScheduler: Lost executor 1 on honolulu.cs.colostate.edu: Container from a bad node: container_1575216325054_0013_01_000002 on host: honolulu.cs.colostate.edu. Exit status: 143. Diagnostics: [2019-12-01 14:35:51.291]Container killed on request. Exit code is 143
+[2019-12-01 14:35:51.293]Container exited with a non-zero exit code 143. 
+[2019-12-01 14:35:51.309]Killed by external signal
+.
+19/12/01 14:35:59 ERROR YarnClusterScheduler: Lost executor 2 on concord.cs.colostate.edu: Container from a bad node: container_1575216325054_0013_01_000003 on host: concord.cs.colostate.edu. Exit status: 143. Diagnostics: [2019-12-01 14:35:59.677]Container killed on request. Exit code is 143
+[2019-12-01 14:35:59.679]Container exited with a non-zero exit code 143. 
+[2019-12-01 14:35:59.693]Killed by external signal
+.
+19/12/01 14:36:08 ERROR YarnClusterScheduler: Lost executor 3 on saint-paul.cs.colostate.edu: Container from a bad node: container_1575216325054_0013_01_000004 on host: saint-paul.cs.colostate.edu. Exit status: 143. Diagnostics: [2019-12-01 14:36:08.135]Container killed on request. Exit code is 143
+[2019-12-01 14:36:08.136]Container exited with a non-zero exit code 143. 
+[2019-12-01 14:36:08.148]Killed by external signal
+.
+19/12/01 14:36:52 ERROR YarnClusterScheduler: Lost executor 1 on columbia.cs.colostate.edu: Container from a bad node: container_1575216325054_0013_02_000002 on host: columbia.cs.colostate.edu. Exit status: 143. Diagnostics: [2019-12-01 14:36:52.222]Container killed on request. Exit code is 143
+[2019-12-01 14:36:52.223]Container exited with a non-zero exit code 143. 
+[2019-12-01 14:36:52.223]Killed by external signal
+.
+19/12/01 14:36:58 ERROR YarnClusterScheduler: Lost executor 2 on jackson.cs.colostate.edu: Container from a bad node: container_1575216325054_0013_02_000003 on host: jackson.cs.colostate.edu. Exit status: 143. Diagnostics: [2019-12-01 14:36:58.623]Container killed on request. Exit code is 143
+[2019-12-01 14:36:58.624]Container exited with a non-zero exit code 143. 
+[2019-12-01 14:36:58.624]Killed by external signal
+.
+19/12/01 14:37:08 ERROR YarnClusterScheduler: Lost executor 3 on oklahoma-city.cs.colostate.edu: Container from a bad node: container_1575216325054_0013_02_000004 on host: oklahoma-city.cs.colostate.edu. Exit status: 143. Diagnostics: [2019-12-01 14:37:08.683]Container killed on request. Exit code is 143
+[2019-12-01 14:37:08.685]Container exited with a non-zero exit code 143. 
+[2019-12-01 14:37:08.699]Killed by external signal
+.
+19/12/01 14:39:29 ERROR TaskSchedulerImpl: Lost executor 11 on 129.82.44.126: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+19/12/01 14:39:35 ERROR TaskSchedulerImpl: Lost executor 15 on 129.82.44.164: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+19/12/01 14:39:40 ERROR TaskSchedulerImpl: Lost executor 10 on 129.82.44.174: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+19/12/01 14:40:01 ERROR TaskSetManager: Task 8 in stage 0.0 failed 4 times; aborting job
+19/12/01 14:40:27 ERROR TaskSchedulerImpl: Lost executor 14 on 129.82.44.133: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+19/12/01 14:40:32 ERROR TaskSchedulerImpl: Lost executor 1 on 129.82.44.126: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+19/12/01 14:40:32 ERROR TaskSetManager: Task 8 in stage 0.0 failed 4 times; aborting job
+19/12/01 14:40:47 ERROR TaskSchedulerImpl: Lost executor 0 on 129.82.44.163: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+19/12/01 14:40:58 ERROR TaskSchedulerImpl: Lost executor 3 on 129.82.44.141: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+19/12/01 14:41:02 ERROR TaskSchedulerImpl: Lost executor 14 on 129.82.44.133: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages.
+19/12/01 14:41:07 ERROR TaskSetManager: Task 8 in stage 0.0 failed 4 times; aborting job
+19/12/01 14:41:19 ERROR StandaloneSchedulerBackend: Application has been killed. Reason: Master removed our application: KILLED
+19/12/01 14:41:19 ERROR Utils: Uncaught exception in thread stop-spark-context
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:226)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.deploy.client.StandaloneAppClient.stop(StandaloneAppClient.scala:283)
+	at org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend.org$apache$spark$scheduler$cluster$StandaloneSchedulerBackend$$stop(StandaloneSchedulerBackend.scala:227)
+	at org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend.stop(StandaloneSchedulerBackend.scala:124)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.stop(TaskSchedulerImpl.scala:669)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:2042)
+	at org.apache.spark.SparkContext$$anonfun$stop$6.apply$mcV$sp(SparkContext.scala:1949)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1340)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1948)
+	at org.apache.spark.SparkContext$$anon$3.run(SparkContext.scala:1903)
+Caused by: org.apache.spark.SparkException: Could not find AppClient.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:160)
+	at org.apache.spark.rpc.netty.Dispatcher.postLocalMessage(Dispatcher.scala:135)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.ask(NettyRpcEnv.scala:229)
+	at org.apache.spark.rpc.netty.NettyRpcEndpointRef.ask(NettyRpcEnv.scala:523)
+	at org.apache.spark.rpc.RpcEndpointRef.ask(RpcEndpointRef.scala:63)
+	... 9 more
+19/12/01 14:46:36 ERROR ApplicationMaster: RECEIVED SIGNAL TERM
+19/12/01 14:46:36 ERROR ApplicationMaster: User class threw exception: org.apache.spark.SparkException: Job 0 cancelled because SparkContext was shut down
+org.apache.spark.SparkException: Job 0 cancelled because SparkContext was shut down
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$cleanUpAfterSchedulerStop$1.apply(DAGScheduler.scala:932)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$cleanUpAfterSchedulerStop$1.apply(DAGScheduler.scala:930)
+	at scala.collection.mutable.HashSet.foreach(HashSet.scala:78)
+	at org.apache.spark.scheduler.DAGScheduler.cleanUpAfterSchedulerStop(DAGScheduler.scala:930)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onStop(DAGScheduler.scala:2128)
+	at org.apache.spark.util.EventLoop.stop(EventLoop.scala:84)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:2041)
+	at org.apache.spark.SparkContext$$anonfun$stop$6.apply$mcV$sp(SparkContext.scala:1949)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1340)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1948)
+	at org.apache.spark.SparkContext$$anonfun$2.apply$mcV$sp(SparkContext.scala:575)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:216)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1945)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:54)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:737)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2061)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2082)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2101)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2126)
+	at org.apache.spark.rdd.RDD.count(RDD.scala:1168)
+	at org.apache.spark.rdd.RDD$$anonfun$takeSample$1.apply(RDD.scala:572)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:363)
+	at org.apache.spark.rdd.RDD.takeSample(RDD.scala:561)
+	at org.apache.spark.mllib.clustering.KMeans.initKMeansParallel(KMeans.scala:386)
+	at org.apache.spark.mllib.clustering.KMeans.runAlgorithm(KMeans.scala:282)
+	at org.apache.spark.mllib.clustering.KMeans.run(KMeans.scala:251)
+	at org.apache.spark.mllib.clustering.KMeans.run(KMeans.scala:233)
+	at runKMeans$.main(runKMeans.scala:28)
+	at runKMeans.main(runKMeans.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$2.run(ApplicationMaster.scala:684)
+19/12/01 14:46:36 ERROR ApplicationMaster: Exception from Reporter thread.
+org.apache.hadoop.yarn.exceptions.ApplicationAttemptNotFoundException: Application attempt appattempt_1575216325054_0014_000001 doesn't exist in ApplicationMasterService cache.
+	at org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.allocate(ApplicationMasterService.java:404)
+	at org.apache.hadoop.yarn.api.impl.pb.service.ApplicationMasterProtocolPBServiceImpl.allocate(ApplicationMasterProtocolPBServiceImpl.java:60)
+	at org.apache.hadoop.yarn.proto.ApplicationMasterProtocol$ApplicationMasterProtocolService$2.callBlockingMethod(ApplicationMasterProtocol.java:99)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:523)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:991)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:872)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:818)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1729)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2678)
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.apache.hadoop.yarn.ipc.RPCUtil.instantiateException(RPCUtil.java:53)
+	at org.apache.hadoop.yarn.ipc.RPCUtil.unwrapAndThrowException(RPCUtil.java:101)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ApplicationMasterProtocolPBClientImpl.allocate(ApplicationMasterProtocolPBClientImpl.java:79)
+	at sun.reflect.GeneratedMethodAccessor24.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:191)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy20.allocate(Unknown Source)
+	at org.apache.hadoop.yarn.client.api.impl.AMRMClientImpl.allocate(AMRMClientImpl.java:277)
+	at org.apache.spark.deploy.yarn.YarnAllocator.allocateResources(YarnAllocator.scala:249)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.org$apache$spark$deploy$yarn$ApplicationMaster$$allocationThreadImpl(ApplicationMaster.scala:540)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$1.run(ApplicationMaster.scala:606)
+Caused by: org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.yarn.exceptions.ApplicationAttemptNotFoundException): Application attempt appattempt_1575216325054_0014_000001 doesn't exist in ApplicationMasterService cache.
+	at org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.allocate(ApplicationMasterService.java:404)
+	at org.apache.hadoop.yarn.api.impl.pb.service.ApplicationMasterProtocolPBServiceImpl.allocate(ApplicationMasterProtocolPBServiceImpl.java:60)
+	at org.apache.hadoop.yarn.proto.ApplicationMasterProtocol$ApplicationMasterProtocolService$2.callBlockingMethod(ApplicationMasterProtocol.java:99)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:523)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:991)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:872)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:818)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1729)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2678)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1475)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1412)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:229)
+	at com.sun.proxy.$Proxy19.allocate(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ApplicationMasterProtocolPBClientImpl.allocate(ApplicationMasterProtocolPBClientImpl.java:77)
+	... 10 more
+19/12/01 14:48:14 INFO KMeans: Initialization with k-means|| took 10.364 seconds.
+19/12/01 14:48:16 INFO KMeans: Iterations took 1.721 seconds.
+19/12/01 14:48:16 INFO KMeans: KMeans converged in 3 iterations.
+19/12/01 14:48:16 INFO KMeans: The cost is 5.650306143371886E7.
+19/12/01 15:14:08 INFO KMeans: Initialization with k-means|| took 11.131 seconds.
+19/12/01 15:14:09 INFO KMeans: Iterations took 1.670 seconds.
+19/12/01 15:14:09 INFO KMeans: KMeans converged in 3 iterations.
+19/12/01 15:14:09 INFO KMeans: The cost is 5.650306143371893E7.
+19/12/01 15:19:05 INFO KMeans: Initialization with k-means|| took 21.399 seconds.
+19/12/01 15:19:05 INFO KMeans: Iterations took 0.710 seconds.
+19/12/01 15:19:05 INFO KMeans: KMeans converged in 3 iterations.
+19/12/01 15:19:05 INFO KMeans: The cost is 5.650306143371886E7.
+19/12/01 15:21:05 INFO KMeans: Initialization with k-means|| took 22.614 seconds.
+19/12/01 15:21:06 INFO KMeans: Iterations took 0.597 seconds.
+19/12/01 15:21:06 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 15:21:06 INFO KMeans: The cost is 7.95544479741739E7.
+19/12/01 17:34:40 ERROR ApplicationMaster: User class threw exception: java.io.IOException: Not a file: hdfs://nashville:30841/thesis/data
+java.io.IOException: Not a file: hdfs://nashville:30841/thesis/data
+	at org.apache.hadoop.mapred.FileInputFormat.getSplits(FileInputFormat.java:322)
+	at org.apache.spark.rdd.HadoopRDD.getPartitions(HadoopRDD.scala:204)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:253)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:251)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:251)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:253)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:251)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:251)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:253)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:251)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:251)
+	at org.apache.spark.rdd.ZippedPartitionsBaseRDD.getPartitions(ZippedPartitionsRDD.scala:55)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:253)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:251)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:251)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:253)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:251)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:251)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2126)
+	at org.apache.spark.rdd.RDD.count(RDD.scala:1168)
+	at org.apache.spark.rdd.RDD$$anonfun$takeSample$1.apply(RDD.scala:572)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:363)
+	at org.apache.spark.rdd.RDD.takeSample(RDD.scala:561)
+	at org.apache.spark.mllib.clustering.KMeans.initKMeansParallel(KMeans.scala:386)
+	at org.apache.spark.mllib.clustering.KMeans.runAlgorithm(KMeans.scala:282)
+	at org.apache.spark.mllib.clustering.KMeans.run(KMeans.scala:251)
+	at org.apache.spark.mllib.clustering.KMeans.run(KMeans.scala:233)
+	at runKMeans$.main(runKMeans.scala:28)
+	at runKMeans.main(runKMeans.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$2.run(ApplicationMaster.scala:684)
+19/12/01 17:34:54 ERROR ApplicationMaster: User class threw exception: java.io.IOException: Not a file: hdfs://nashville:30841/thesis/data
+java.io.IOException: Not a file: hdfs://nashville:30841/thesis/data
+	at org.apache.hadoop.mapred.FileInputFormat.getSplits(FileInputFormat.java:322)
+	at org.apache.spark.rdd.HadoopRDD.getPartitions(HadoopRDD.scala:204)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:253)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:251)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:251)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:253)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:251)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:251)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:253)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:251)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:251)
+	at org.apache.spark.rdd.ZippedPartitionsBaseRDD.getPartitions(ZippedPartitionsRDD.scala:55)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:253)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:251)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:251)
+	at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:253)
+	at org.apache.spark.rdd.RDD$$anonfun$partitions$2.apply(RDD.scala:251)
+	at scala.Option.getOrElse(Option.scala:121)
+	at org.apache.spark.rdd.RDD.partitions(RDD.scala:251)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2126)
+	at org.apache.spark.rdd.RDD.count(RDD.scala:1168)
+	at org.apache.spark.rdd.RDD$$anonfun$takeSample$1.apply(RDD.scala:572)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:363)
+	at org.apache.spark.rdd.RDD.takeSample(RDD.scala:561)
+	at org.apache.spark.mllib.clustering.KMeans.initKMeansParallel(KMeans.scala:386)
+	at org.apache.spark.mllib.clustering.KMeans.runAlgorithm(KMeans.scala:282)
+	at org.apache.spark.mllib.clustering.KMeans.run(KMeans.scala:251)
+	at org.apache.spark.mllib.clustering.KMeans.run(KMeans.scala:233)
+	at runKMeans$.main(runKMeans.scala:28)
+	at runKMeans.main(runKMeans.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$2.run(ApplicationMaster.scala:684)
+19/12/01 17:37:56 INFO KMeans: Initialization with k-means|| took 16.345 seconds.
+19/12/01 17:37:56 INFO KMeans: Iterations took 0.473 seconds.
+19/12/01 17:37:56 INFO KMeans: KMeans converged in 3 iterations.
+19/12/01 17:37:56 INFO KMeans: The cost is 1.4903289283589672E7.
+19/12/01 17:38:30 INFO KMeans: Initialization with k-means|| took 10.918 seconds.
+19/12/01 17:38:30 INFO KMeans: Iterations took 0.386 seconds.
+19/12/01 17:38:30 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 17:38:30 INFO KMeans: The cost is 2.9803212765855607E7.
+19/12/01 17:39:08 INFO KMeans: Initialization with k-means|| took 15.179 seconds.
+19/12/01 17:39:09 INFO KMeans: Iterations took 0.474 seconds.
+19/12/01 17:39:09 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 17:39:09 INFO KMeans: The cost is 6.7577751603935E7.
+19/12/01 17:39:52 INFO KMeans: Initialization with k-means|| took 18.609 seconds.
+19/12/01 17:39:52 INFO KMeans: Iterations took 0.475 seconds.
+19/12/01 17:39:52 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 17:39:52 INFO KMeans: The cost is 5.964403925440021E7.
+19/12/01 17:40:43 INFO KMeans: Initialization with k-means|| took 25.626 seconds.
+19/12/01 17:40:44 INFO KMeans: Iterations took 0.602 seconds.
+19/12/01 17:40:44 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 17:40:44 INFO KMeans: The cost is 8.94659217557396E7.
+19/12/01 17:44:04 INFO KMeans: Initialization with k-means|| took 177.439 seconds.
+19/12/01 17:44:28 INFO KMeans: Iterations took 24.053 seconds.
+19/12/01 17:44:28 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 17:44:28 INFO KMeans: The cost is 1.1930283320012365E8.
+19/12/01 17:50:15 INFO KMeans: Initialization with k-means|| took 294.971 seconds.
+19/12/01 17:51:21 INFO KMeans: Iterations took 66.816 seconds.
+19/12/01 17:51:21 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 17:51:21 INFO KMeans: The cost is 2.701992991979006E8.
+19/12/01 17:57:57 INFO KMeans: Initialization with k-means|| took 372.419 seconds.
+19/12/01 17:59:09 INFO KMeans: Iterations took 72.462 seconds.
+19/12/01 17:59:09 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 17:59:09 INFO KMeans: The cost is 2.386003752128014E8.
+19/12/01 18:07:16 INFO KMeans: Initialization with k-means|| took 463.052 seconds.
+19/12/01 18:08:58 INFO KMeans: Iterations took 101.896 seconds.
+19/12/01 18:08:58 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 18:08:58 INFO KMeans: The cost is 2.982292463057303E8.
+19/12/01 18:22:37 INFO KMeans: Initialization with k-means|| took 774.749 seconds.
+19/12/01 18:25:42 INFO KMeans: Iterations took 184.818 seconds.
+19/12/01 18:25:42 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 18:25:42 INFO KMeans: The cost is 3.5793179070731497E8.
+19/12/01 18:33:12 ERROR ApplicationMaster: RECEIVED SIGNAL TERM
+19/12/01 18:33:12 ERROR ApplicationMaster: User class threw exception: org.apache.spark.SparkException: Job 2 cancelled because SparkContext was shut down
+org.apache.spark.SparkException: Job 2 cancelled because SparkContext was shut down
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$cleanUpAfterSchedulerStop$1.apply(DAGScheduler.scala:932)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$cleanUpAfterSchedulerStop$1.apply(DAGScheduler.scala:930)
+	at scala.collection.mutable.HashSet.foreach(HashSet.scala:78)
+	at org.apache.spark.scheduler.DAGScheduler.cleanUpAfterSchedulerStop(DAGScheduler.scala:930)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onStop(DAGScheduler.scala:2128)
+	at org.apache.spark.util.EventLoop.stop(EventLoop.scala:84)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:2041)
+	at org.apache.spark.SparkContext$$anonfun$stop$6.apply$mcV$sp(SparkContext.scala:1949)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1340)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1948)
+	at org.apache.spark.SparkContext$$anonfun$2.apply$mcV$sp(SparkContext.scala:575)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:216)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1945)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:54)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:737)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2061)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2158)
+	at org.apache.spark.rdd.RDD$$anonfun$fold$1.apply(RDD.scala:1098)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:363)
+	at org.apache.spark.rdd.RDD.fold(RDD.scala:1092)
+	at org.apache.spark.rdd.DoubleRDDFunctions$$anonfun$sum$1.apply$mcD$sp(DoubleRDDFunctions.scala:35)
+	at org.apache.spark.rdd.DoubleRDDFunctions$$anonfun$sum$1.apply(DoubleRDDFunctions.scala:35)
+	at org.apache.spark.rdd.DoubleRDDFunctions$$anonfun$sum$1.apply(DoubleRDDFunctions.scala:35)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:363)
+	at org.apache.spark.rdd.DoubleRDDFunctions.sum(DoubleRDDFunctions.scala:34)
+	at org.apache.spark.mllib.clustering.KMeans.initKMeansParallel(KMeans.scala:406)
+	at org.apache.spark.mllib.clustering.KMeans.runAlgorithm(KMeans.scala:282)
+	at org.apache.spark.mllib.clustering.KMeans.run(KMeans.scala:251)
+	at org.apache.spark.mllib.clustering.KMeans.run(KMeans.scala:233)
+	at runKMeans$.main(runKMeans.scala:28)
+	at runKMeans.main(runKMeans.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$2.run(ApplicationMaster.scala:684)
+19/12/01 18:33:12 ERROR ApplicationMaster: Exception from Reporter thread.
+org.apache.hadoop.yarn.exceptions.ApplicationAttemptNotFoundException: Application attempt appattempt_1575216325054_0036_000001 doesn't exist in ApplicationMasterService cache.
+	at org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.allocate(ApplicationMasterService.java:404)
+	at org.apache.hadoop.yarn.api.impl.pb.service.ApplicationMasterProtocolPBServiceImpl.allocate(ApplicationMasterProtocolPBServiceImpl.java:60)
+	at org.apache.hadoop.yarn.proto.ApplicationMasterProtocol$ApplicationMasterProtocolService$2.callBlockingMethod(ApplicationMasterProtocol.java:99)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:523)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:991)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:872)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:818)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1729)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2678)
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.apache.hadoop.yarn.ipc.RPCUtil.instantiateException(RPCUtil.java:53)
+	at org.apache.hadoop.yarn.ipc.RPCUtil.unwrapAndThrowException(RPCUtil.java:101)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ApplicationMasterProtocolPBClientImpl.allocate(ApplicationMasterProtocolPBClientImpl.java:79)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:191)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy20.allocate(Unknown Source)
+	at org.apache.hadoop.yarn.client.api.impl.AMRMClientImpl.allocate(AMRMClientImpl.java:277)
+	at org.apache.spark.deploy.yarn.YarnAllocator.allocateResources(YarnAllocator.scala:249)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.org$apache$spark$deploy$yarn$ApplicationMaster$$allocationThreadImpl(ApplicationMaster.scala:540)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$1.run(ApplicationMaster.scala:606)
+Caused by: org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.yarn.exceptions.ApplicationAttemptNotFoundException): Application attempt appattempt_1575216325054_0036_000001 doesn't exist in ApplicationMasterService cache.
+	at org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.allocate(ApplicationMasterService.java:404)
+	at org.apache.hadoop.yarn.api.impl.pb.service.ApplicationMasterProtocolPBServiceImpl.allocate(ApplicationMasterProtocolPBServiceImpl.java:60)
+	at org.apache.hadoop.yarn.proto.ApplicationMasterProtocol$ApplicationMasterProtocolService$2.callBlockingMethod(ApplicationMasterProtocol.java:99)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:523)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:991)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:872)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:818)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1729)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2678)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1475)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1412)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:229)
+	at com.sun.proxy.$Proxy19.allocate(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ApplicationMasterProtocolPBClientImpl.allocate(ApplicationMasterProtocolPBClientImpl.java:77)
+	... 10 more
+19/12/01 18:34:31 ERROR ApplicationMaster: Uncaught exception: 
+org.apache.hadoop.yarn.exceptions.InvalidResourceRequestException: Invalid resource request, requested resource type=[vcores] < 0 or greater than maximum allowed allocation. Requested resource=<memory:11264, vCores:50>, maximum allowed allocation=<memory:24000, vCores:4>, please note that maximum allowed allocation is calculated by scheduler based on maximum resource of registered NodeManagers, which might be less than configured maximum allocation=<memory:24000, vCores:4>
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.throwInvalidResourceException(SchedulerUtils.java:397)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.checkResourceRequestAgainstAvailableResource(SchedulerUtils.java:379)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.validateResourceRequest(SchedulerUtils.java:288)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeAndValidateRequest(SchedulerUtils.java:259)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeAndvalidateRequest(SchedulerUtils.java:274)
+	at org.apache.hadoop.yarn.server.resourcemanager.RMServerUtils.normalizeAndValidateRequests(RMServerUtils.java:250)
+	at org.apache.hadoop.yarn.server.resourcemanager.DefaultAMSProcessor.allocate(DefaultAMSProcessor.java:231)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.constraint.processor.DisabledPlacementProcessor.allocate(DisabledPlacementProcessor.java:75)
+	at org.apache.hadoop.yarn.server.resourcemanager.AMSProcessingChain.allocate(AMSProcessingChain.java:92)
+	at org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.allocate(ApplicationMasterService.java:433)
+	at org.apache.hadoop.yarn.api.impl.pb.service.ApplicationMasterProtocolPBServiceImpl.allocate(ApplicationMasterProtocolPBServiceImpl.java:60)
+	at org.apache.hadoop.yarn.proto.ApplicationMasterProtocol$ApplicationMasterProtocolService$2.callBlockingMethod(ApplicationMasterProtocol.java:99)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:523)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:991)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:872)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:818)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1729)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2678)
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.apache.hadoop.yarn.ipc.RPCUtil.instantiateException(RPCUtil.java:53)
+	at org.apache.hadoop.yarn.ipc.RPCUtil.unwrapAndThrowException(RPCUtil.java:101)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ApplicationMasterProtocolPBClientImpl.allocate(ApplicationMasterProtocolPBClientImpl.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:191)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy20.allocate(Unknown Source)
+	at org.apache.hadoop.yarn.client.api.impl.AMRMClientImpl.allocate(AMRMClientImpl.java:277)
+	at org.apache.spark.deploy.yarn.YarnAllocator.allocateResources(YarnAllocator.scala:249)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.createAllocator(ApplicationMaster.scala:450)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.runDriver(ApplicationMaster.scala:481)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.org$apache$spark$deploy$yarn$ApplicationMaster$$runImpl(ApplicationMaster.scala:305)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anonfun$run$1.apply$mcV$sp(ApplicationMaster.scala:245)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anonfun$run$1.apply(ApplicationMaster.scala:245)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anonfun$run$1.apply(ApplicationMaster.scala:245)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$3.run(ApplicationMaster.scala:779)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.doAsUser(ApplicationMaster.scala:778)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.run(ApplicationMaster.scala:244)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$.main(ApplicationMaster.scala:803)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.main(ApplicationMaster.scala)
+Caused by: org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.yarn.exceptions.InvalidResourceRequestException): Invalid resource request, requested resource type=[vcores] < 0 or greater than maximum allowed allocation. Requested resource=<memory:11264, vCores:50>, maximum allowed allocation=<memory:24000, vCores:4>, please note that maximum allowed allocation is calculated by scheduler based on maximum resource of registered NodeManagers, which might be less than configured maximum allocation=<memory:24000, vCores:4>
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.throwInvalidResourceException(SchedulerUtils.java:397)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.checkResourceRequestAgainstAvailableResource(SchedulerUtils.java:379)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.validateResourceRequest(SchedulerUtils.java:288)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeAndValidateRequest(SchedulerUtils.java:259)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeAndvalidateRequest(SchedulerUtils.java:274)
+	at org.apache.hadoop.yarn.server.resourcemanager.RMServerUtils.normalizeAndValidateRequests(RMServerUtils.java:250)
+	at org.apache.hadoop.yarn.server.resourcemanager.DefaultAMSProcessor.allocate(DefaultAMSProcessor.java:231)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.constraint.processor.DisabledPlacementProcessor.allocate(DisabledPlacementProcessor.java:75)
+	at org.apache.hadoop.yarn.server.resourcemanager.AMSProcessingChain.allocate(AMSProcessingChain.java:92)
+	at org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.allocate(ApplicationMasterService.java:433)
+	at org.apache.hadoop.yarn.api.impl.pb.service.ApplicationMasterProtocolPBServiceImpl.allocate(ApplicationMasterProtocolPBServiceImpl.java:60)
+	at org.apache.hadoop.yarn.proto.ApplicationMasterProtocol$ApplicationMasterProtocolService$2.callBlockingMethod(ApplicationMasterProtocol.java:99)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:523)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:991)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:872)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:818)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1729)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2678)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1475)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1412)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:229)
+	at com.sun.proxy.$Proxy19.allocate(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ApplicationMasterProtocolPBClientImpl.allocate(ApplicationMasterProtocolPBClientImpl.java:77)
+	... 23 more
+19/12/01 18:34:38 ERROR ApplicationMaster: Uncaught exception: 
+org.apache.hadoop.yarn.exceptions.InvalidResourceRequestException: Invalid resource request, requested resource type=[vcores] < 0 or greater than maximum allowed allocation. Requested resource=<memory:11264, vCores:50>, maximum allowed allocation=<memory:24000, vCores:4>, please note that maximum allowed allocation is calculated by scheduler based on maximum resource of registered NodeManagers, which might be less than configured maximum allocation=<memory:24000, vCores:4>
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.throwInvalidResourceException(SchedulerUtils.java:397)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.checkResourceRequestAgainstAvailableResource(SchedulerUtils.java:379)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.validateResourceRequest(SchedulerUtils.java:288)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeAndValidateRequest(SchedulerUtils.java:259)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeAndvalidateRequest(SchedulerUtils.java:274)
+	at org.apache.hadoop.yarn.server.resourcemanager.RMServerUtils.normalizeAndValidateRequests(RMServerUtils.java:250)
+	at org.apache.hadoop.yarn.server.resourcemanager.DefaultAMSProcessor.allocate(DefaultAMSProcessor.java:231)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.constraint.processor.DisabledPlacementProcessor.allocate(DisabledPlacementProcessor.java:75)
+	at org.apache.hadoop.yarn.server.resourcemanager.AMSProcessingChain.allocate(AMSProcessingChain.java:92)
+	at org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.allocate(ApplicationMasterService.java:433)
+	at org.apache.hadoop.yarn.api.impl.pb.service.ApplicationMasterProtocolPBServiceImpl.allocate(ApplicationMasterProtocolPBServiceImpl.java:60)
+	at org.apache.hadoop.yarn.proto.ApplicationMasterProtocol$ApplicationMasterProtocolService$2.callBlockingMethod(ApplicationMasterProtocol.java:99)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:523)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:991)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:872)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:818)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1729)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2678)
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.apache.hadoop.yarn.ipc.RPCUtil.instantiateException(RPCUtil.java:53)
+	at org.apache.hadoop.yarn.ipc.RPCUtil.unwrapAndThrowException(RPCUtil.java:101)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ApplicationMasterProtocolPBClientImpl.allocate(ApplicationMasterProtocolPBClientImpl.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:191)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy20.allocate(Unknown Source)
+	at org.apache.hadoop.yarn.client.api.impl.AMRMClientImpl.allocate(AMRMClientImpl.java:277)
+	at org.apache.spark.deploy.yarn.YarnAllocator.allocateResources(YarnAllocator.scala:249)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.createAllocator(ApplicationMaster.scala:450)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.runDriver(ApplicationMaster.scala:481)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.org$apache$spark$deploy$yarn$ApplicationMaster$$runImpl(ApplicationMaster.scala:305)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anonfun$run$1.apply$mcV$sp(ApplicationMaster.scala:245)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anonfun$run$1.apply(ApplicationMaster.scala:245)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anonfun$run$1.apply(ApplicationMaster.scala:245)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$3.run(ApplicationMaster.scala:779)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.doAsUser(ApplicationMaster.scala:778)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.run(ApplicationMaster.scala:244)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$.main(ApplicationMaster.scala:803)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.main(ApplicationMaster.scala)
+Caused by: org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.yarn.exceptions.InvalidResourceRequestException): Invalid resource request, requested resource type=[vcores] < 0 or greater than maximum allowed allocation. Requested resource=<memory:11264, vCores:50>, maximum allowed allocation=<memory:24000, vCores:4>, please note that maximum allowed allocation is calculated by scheduler based on maximum resource of registered NodeManagers, which might be less than configured maximum allocation=<memory:24000, vCores:4>
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.throwInvalidResourceException(SchedulerUtils.java:397)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.checkResourceRequestAgainstAvailableResource(SchedulerUtils.java:379)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.validateResourceRequest(SchedulerUtils.java:288)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeAndValidateRequest(SchedulerUtils.java:259)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeAndvalidateRequest(SchedulerUtils.java:274)
+	at org.apache.hadoop.yarn.server.resourcemanager.RMServerUtils.normalizeAndValidateRequests(RMServerUtils.java:250)
+	at org.apache.hadoop.yarn.server.resourcemanager.DefaultAMSProcessor.allocate(DefaultAMSProcessor.java:231)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.constraint.processor.DisabledPlacementProcessor.allocate(DisabledPlacementProcessor.java:75)
+	at org.apache.hadoop.yarn.server.resourcemanager.AMSProcessingChain.allocate(AMSProcessingChain.java:92)
+	at org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.allocate(ApplicationMasterService.java:433)
+	at org.apache.hadoop.yarn.api.impl.pb.service.ApplicationMasterProtocolPBServiceImpl.allocate(ApplicationMasterProtocolPBServiceImpl.java:60)
+	at org.apache.hadoop.yarn.proto.ApplicationMasterProtocol$ApplicationMasterProtocolService$2.callBlockingMethod(ApplicationMasterProtocol.java:99)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:523)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:991)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:872)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:818)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1729)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2678)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1475)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1412)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:229)
+	at com.sun.proxy.$Proxy19.allocate(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ApplicationMasterProtocolPBClientImpl.allocate(ApplicationMasterProtocolPBClientImpl.java:77)
+	... 23 more
+19/12/01 18:34:55 ERROR ApplicationMaster: Uncaught exception: 
+org.apache.hadoop.yarn.exceptions.InvalidResourceRequestException: Invalid resource request, requested resource type=[vcores] < 0 or greater than maximum allowed allocation. Requested resource=<memory:11264, vCores:50>, maximum allowed allocation=<memory:24000, vCores:4>, please note that maximum allowed allocation is calculated by scheduler based on maximum resource of registered NodeManagers, which might be less than configured maximum allocation=<memory:24000, vCores:4>
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.throwInvalidResourceException(SchedulerUtils.java:397)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.checkResourceRequestAgainstAvailableResource(SchedulerUtils.java:379)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.validateResourceRequest(SchedulerUtils.java:288)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeAndValidateRequest(SchedulerUtils.java:259)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeAndvalidateRequest(SchedulerUtils.java:274)
+	at org.apache.hadoop.yarn.server.resourcemanager.RMServerUtils.normalizeAndValidateRequests(RMServerUtils.java:250)
+	at org.apache.hadoop.yarn.server.resourcemanager.DefaultAMSProcessor.allocate(DefaultAMSProcessor.java:231)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.constraint.processor.DisabledPlacementProcessor.allocate(DisabledPlacementProcessor.java:75)
+	at org.apache.hadoop.yarn.server.resourcemanager.AMSProcessingChain.allocate(AMSProcessingChain.java:92)
+	at org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.allocate(ApplicationMasterService.java:433)
+	at org.apache.hadoop.yarn.api.impl.pb.service.ApplicationMasterProtocolPBServiceImpl.allocate(ApplicationMasterProtocolPBServiceImpl.java:60)
+	at org.apache.hadoop.yarn.proto.ApplicationMasterProtocol$ApplicationMasterProtocolService$2.callBlockingMethod(ApplicationMasterProtocol.java:99)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:523)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:991)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:872)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:818)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1729)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2678)
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.apache.hadoop.yarn.ipc.RPCUtil.instantiateException(RPCUtil.java:53)
+	at org.apache.hadoop.yarn.ipc.RPCUtil.unwrapAndThrowException(RPCUtil.java:101)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ApplicationMasterProtocolPBClientImpl.allocate(ApplicationMasterProtocolPBClientImpl.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:191)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy20.allocate(Unknown Source)
+	at org.apache.hadoop.yarn.client.api.impl.AMRMClientImpl.allocate(AMRMClientImpl.java:277)
+	at org.apache.spark.deploy.yarn.YarnAllocator.allocateResources(YarnAllocator.scala:249)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.createAllocator(ApplicationMaster.scala:450)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.runDriver(ApplicationMaster.scala:481)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.org$apache$spark$deploy$yarn$ApplicationMaster$$runImpl(ApplicationMaster.scala:305)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anonfun$run$1.apply$mcV$sp(ApplicationMaster.scala:245)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anonfun$run$1.apply(ApplicationMaster.scala:245)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anonfun$run$1.apply(ApplicationMaster.scala:245)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$3.run(ApplicationMaster.scala:779)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.doAsUser(ApplicationMaster.scala:778)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.run(ApplicationMaster.scala:244)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$.main(ApplicationMaster.scala:803)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.main(ApplicationMaster.scala)
+Caused by: org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.yarn.exceptions.InvalidResourceRequestException): Invalid resource request, requested resource type=[vcores] < 0 or greater than maximum allowed allocation. Requested resource=<memory:11264, vCores:50>, maximum allowed allocation=<memory:24000, vCores:4>, please note that maximum allowed allocation is calculated by scheduler based on maximum resource of registered NodeManagers, which might be less than configured maximum allocation=<memory:24000, vCores:4>
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.throwInvalidResourceException(SchedulerUtils.java:397)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.checkResourceRequestAgainstAvailableResource(SchedulerUtils.java:379)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.validateResourceRequest(SchedulerUtils.java:288)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeAndValidateRequest(SchedulerUtils.java:259)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeAndvalidateRequest(SchedulerUtils.java:274)
+	at org.apache.hadoop.yarn.server.resourcemanager.RMServerUtils.normalizeAndValidateRequests(RMServerUtils.java:250)
+	at org.apache.hadoop.yarn.server.resourcemanager.DefaultAMSProcessor.allocate(DefaultAMSProcessor.java:231)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.constraint.processor.DisabledPlacementProcessor.allocate(DisabledPlacementProcessor.java:75)
+	at org.apache.hadoop.yarn.server.resourcemanager.AMSProcessingChain.allocate(AMSProcessingChain.java:92)
+	at org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.allocate(ApplicationMasterService.java:433)
+	at org.apache.hadoop.yarn.api.impl.pb.service.ApplicationMasterProtocolPBServiceImpl.allocate(ApplicationMasterProtocolPBServiceImpl.java:60)
+	at org.apache.hadoop.yarn.proto.ApplicationMasterProtocol$ApplicationMasterProtocolService$2.callBlockingMethod(ApplicationMasterProtocol.java:99)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:523)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:991)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:872)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:818)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1729)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2678)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1475)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1412)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:229)
+	at com.sun.proxy.$Proxy19.allocate(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ApplicationMasterProtocolPBClientImpl.allocate(ApplicationMasterProtocolPBClientImpl.java:77)
+	... 23 more
+19/12/01 18:35:02 ERROR ApplicationMaster: Uncaught exception: 
+org.apache.hadoop.yarn.exceptions.InvalidResourceRequestException: Invalid resource request, requested resource type=[vcores] < 0 or greater than maximum allowed allocation. Requested resource=<memory:11264, vCores:50>, maximum allowed allocation=<memory:24000, vCores:4>, please note that maximum allowed allocation is calculated by scheduler based on maximum resource of registered NodeManagers, which might be less than configured maximum allocation=<memory:24000, vCores:4>
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.throwInvalidResourceException(SchedulerUtils.java:397)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.checkResourceRequestAgainstAvailableResource(SchedulerUtils.java:379)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.validateResourceRequest(SchedulerUtils.java:288)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeAndValidateRequest(SchedulerUtils.java:259)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeAndvalidateRequest(SchedulerUtils.java:274)
+	at org.apache.hadoop.yarn.server.resourcemanager.RMServerUtils.normalizeAndValidateRequests(RMServerUtils.java:250)
+	at org.apache.hadoop.yarn.server.resourcemanager.DefaultAMSProcessor.allocate(DefaultAMSProcessor.java:231)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.constraint.processor.DisabledPlacementProcessor.allocate(DisabledPlacementProcessor.java:75)
+	at org.apache.hadoop.yarn.server.resourcemanager.AMSProcessingChain.allocate(AMSProcessingChain.java:92)
+	at org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.allocate(ApplicationMasterService.java:433)
+	at org.apache.hadoop.yarn.api.impl.pb.service.ApplicationMasterProtocolPBServiceImpl.allocate(ApplicationMasterProtocolPBServiceImpl.java:60)
+	at org.apache.hadoop.yarn.proto.ApplicationMasterProtocol$ApplicationMasterProtocolService$2.callBlockingMethod(ApplicationMasterProtocol.java:99)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:523)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:991)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:872)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:818)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1729)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2678)
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.apache.hadoop.yarn.ipc.RPCUtil.instantiateException(RPCUtil.java:53)
+	at org.apache.hadoop.yarn.ipc.RPCUtil.unwrapAndThrowException(RPCUtil.java:101)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ApplicationMasterProtocolPBClientImpl.allocate(ApplicationMasterProtocolPBClientImpl.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:191)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy20.allocate(Unknown Source)
+	at org.apache.hadoop.yarn.client.api.impl.AMRMClientImpl.allocate(AMRMClientImpl.java:277)
+	at org.apache.spark.deploy.yarn.YarnAllocator.allocateResources(YarnAllocator.scala:249)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.createAllocator(ApplicationMaster.scala:450)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.runDriver(ApplicationMaster.scala:481)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.org$apache$spark$deploy$yarn$ApplicationMaster$$runImpl(ApplicationMaster.scala:305)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anonfun$run$1.apply$mcV$sp(ApplicationMaster.scala:245)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anonfun$run$1.apply(ApplicationMaster.scala:245)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anonfun$run$1.apply(ApplicationMaster.scala:245)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$3.run(ApplicationMaster.scala:779)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.doAsUser(ApplicationMaster.scala:778)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.run(ApplicationMaster.scala:244)
+	at org.apache.spark.deploy.yarn.ApplicationMaster$.main(ApplicationMaster.scala:803)
+	at org.apache.spark.deploy.yarn.ApplicationMaster.main(ApplicationMaster.scala)
+Caused by: org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.yarn.exceptions.InvalidResourceRequestException): Invalid resource request, requested resource type=[vcores] < 0 or greater than maximum allowed allocation. Requested resource=<memory:11264, vCores:50>, maximum allowed allocation=<memory:24000, vCores:4>, please note that maximum allowed allocation is calculated by scheduler based on maximum resource of registered NodeManagers, which might be less than configured maximum allocation=<memory:24000, vCores:4>
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.throwInvalidResourceException(SchedulerUtils.java:397)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.checkResourceRequestAgainstAvailableResource(SchedulerUtils.java:379)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.validateResourceRequest(SchedulerUtils.java:288)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeAndValidateRequest(SchedulerUtils.java:259)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerUtils.normalizeAndvalidateRequest(SchedulerUtils.java:274)
+	at org.apache.hadoop.yarn.server.resourcemanager.RMServerUtils.normalizeAndValidateRequests(RMServerUtils.java:250)
+	at org.apache.hadoop.yarn.server.resourcemanager.DefaultAMSProcessor.allocate(DefaultAMSProcessor.java:231)
+	at org.apache.hadoop.yarn.server.resourcemanager.scheduler.constraint.processor.DisabledPlacementProcessor.allocate(DisabledPlacementProcessor.java:75)
+	at org.apache.hadoop.yarn.server.resourcemanager.AMSProcessingChain.allocate(AMSProcessingChain.java:92)
+	at org.apache.hadoop.yarn.server.resourcemanager.ApplicationMasterService.allocate(ApplicationMasterService.java:433)
+	at org.apache.hadoop.yarn.api.impl.pb.service.ApplicationMasterProtocolPBServiceImpl.allocate(ApplicationMasterProtocolPBServiceImpl.java:60)
+	at org.apache.hadoop.yarn.proto.ApplicationMasterProtocol$ApplicationMasterProtocolService$2.callBlockingMethod(ApplicationMasterProtocol.java:99)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:523)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:991)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:872)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:818)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1729)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2678)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1475)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1412)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:229)
+	at com.sun.proxy.$Proxy19.allocate(Unknown Source)
+	at org.apache.hadoop.yarn.api.impl.pb.client.ApplicationMasterProtocolPBClientImpl.allocate(ApplicationMasterProtocolPBClientImpl.java:77)
+	... 23 more
+19/12/01 18:36:40 INFO KMeans: Initialization with k-means|| took 6.960 seconds.
+19/12/01 18:36:40 INFO KMeans: Iterations took 0.446 seconds.
+19/12/01 18:36:40 INFO KMeans: KMeans converged in 3 iterations.
+19/12/01 18:36:40 INFO KMeans: The cost is 1.4903289283589672E7.
+19/12/01 18:37:23 INFO KMeans: Initialization with k-means|| took 17.745 seconds.
+19/12/01 18:37:23 INFO KMeans: Iterations took 0.710 seconds.
+19/12/01 18:37:23 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 18:37:23 INFO KMeans: The cost is 2.980321276585561E7.
+19/12/01 18:37:57 INFO KMeans: Initialization with k-means|| took 9.405 seconds.
+19/12/01 18:37:57 INFO KMeans: Iterations took 0.421 seconds.
+19/12/01 18:37:57 INFO KMeans: KMeans converged in 3 iterations.
+19/12/01 18:37:57 INFO KMeans: The cost is 4.473637523068067E7.
+19/12/01 18:38:30 INFO KMeans: Initialization with k-means|| took 8.979 seconds.
+19/12/01 18:38:30 INFO KMeans: Iterations took 0.288 seconds.
+19/12/01 18:38:30 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 18:38:30 INFO KMeans: The cost is 5.964403925440019E7.
+19/12/01 18:39:07 INFO KMeans: Initialization with k-means|| took 12.509 seconds.
+19/12/01 18:39:08 INFO KMeans: Iterations took 0.362 seconds.
+19/12/01 18:39:08 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 18:39:08 INFO KMeans: The cost is 8.946592175573958E7.
+19/12/01 18:41:07 INFO KMeans: Initialization with k-means|| took 6.554 seconds.
+19/12/01 18:41:07 INFO KMeans: Iterations took 0.493 seconds.
+19/12/01 18:41:07 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 18:41:07 INFO KMeans: The cost is 1.4903289283589672E7.
+19/12/01 18:41:41 INFO KMeans: Initialization with k-means|| took 7.391 seconds.
+19/12/01 18:41:41 INFO KMeans: Iterations took 0.307 seconds.
+19/12/01 18:41:41 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 18:41:41 INFO KMeans: The cost is 2.98032127658556E7.
+19/12/01 18:42:15 INFO KMeans: Initialization with k-means|| took 11.572 seconds.
+19/12/01 18:42:15 INFO KMeans: Iterations took 0.281 seconds.
+19/12/01 18:42:15 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 18:42:15 INFO KMeans: The cost is 4.473637523068069E7.
+19/12/01 18:42:51 INFO KMeans: Initialization with k-means|| took 11.899 seconds.
+19/12/01 18:42:51 INFO KMeans: Iterations took 0.279 seconds.
+19/12/01 18:42:51 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 18:42:51 INFO KMeans: The cost is 5.964403925440018E7.
+19/12/01 18:43:25 INFO KMeans: Initialization with k-means|| took 12.228 seconds.
+19/12/01 18:43:26 INFO KMeans: Iterations took 0.336 seconds.
+19/12/01 18:43:26 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 18:43:26 INFO KMeans: The cost is 8.94659217557396E7.
+19/12/01 18:44:05 INFO KMeans: Initialization with k-means|| took 15.613 seconds.
+19/12/01 18:44:06 INFO KMeans: Iterations took 0.363 seconds.
+19/12/01 18:44:06 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 18:44:06 INFO KMeans: The cost is 1.1930283320012364E8.
+19/12/01 18:44:50 INFO KMeans: Initialization with k-means|| took 21.094 seconds.
+19/12/01 18:44:51 INFO KMeans: Iterations took 0.679 seconds.
+19/12/01 18:44:51 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 18:44:51 INFO KMeans: The cost is 1.789586746836776E8.
+19/12/01 18:45:41 INFO KMeans: Initialization with k-means|| took 26.419 seconds.
+19/12/01 18:45:41 INFO KMeans: Iterations took 0.517 seconds.
+19/12/01 18:45:41 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 18:45:41 INFO KMeans: The cost is 2.386003752128014E8.
+19/12/01 18:46:36 INFO KMeans: Initialization with k-means|| took 30.723 seconds.
+19/12/01 18:46:37 INFO KMeans: Iterations took 0.566 seconds.
+19/12/01 18:46:37 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 18:46:37 INFO KMeans: The cost is 2.982292463057303E8.
+19/12/01 18:47:49 INFO KMeans: Initialization with k-means|| took 49.175 seconds.
+19/12/01 18:47:50 INFO KMeans: Iterations took 0.680 seconds.
+19/12/01 18:47:50 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 18:47:50 INFO KMeans: The cost is 3.57931790707315E8.
+19/12/01 18:49:12 INFO KMeans: Initialization with k-means|| took 44.666 seconds.
+19/12/01 18:49:13 INFO KMeans: Iterations took 0.794 seconds.
+19/12/01 18:49:13 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 18:49:13 INFO KMeans: The cost is 4.175447626776504E8.
+19/12/01 18:50:26 INFO KMeans: Initialization with k-means|| took 49.299 seconds.
+19/12/01 18:50:27 INFO KMeans: Iterations took 1.267 seconds.
+19/12/01 18:50:27 INFO KMeans: KMeans converged in 3 iterations.
+19/12/01 18:50:27 INFO KMeans: The cost is 4.772034119585207E8.
+19/12/01 18:51:39 INFO KMeans: Initialization with k-means|| took 49.633 seconds.
+19/12/01 18:51:40 INFO KMeans: Iterations took 1.000 seconds.
+19/12/01 18:51:40 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 18:51:40 INFO KMeans: The cost is 5.368646311137342E8.
+19/12/01 18:53:11 INFO KMeans: Initialization with k-means|| took 55.648 seconds.
+19/12/01 18:53:12 INFO KMeans: Iterations took 1.008 seconds.
+19/12/01 18:53:12 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 18:53:12 INFO KMeans: The cost is 5.965030710179936E8.
+19/12/01 19:03:20 ERROR StandaloneSchedulerBackend: Application has been killed. Reason: Master removed our application: KILLED
+19/12/01 19:03:20 ERROR Utils: Uncaught exception in thread stop-spark-context
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:226)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.deploy.client.StandaloneAppClient.stop(StandaloneAppClient.scala:283)
+	at org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend.org$apache$spark$scheduler$cluster$StandaloneSchedulerBackend$$stop(StandaloneSchedulerBackend.scala:227)
+	at org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend.stop(StandaloneSchedulerBackend.scala:124)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.stop(TaskSchedulerImpl.scala:669)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:2042)
+	at org.apache.spark.SparkContext$$anonfun$stop$6.apply$mcV$sp(SparkContext.scala:1949)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1340)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1948)
+	at org.apache.spark.SparkContext$$anon$3.run(SparkContext.scala:1903)
+Caused by: org.apache.spark.SparkException: Could not find AppClient.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:160)
+	at org.apache.spark.rpc.netty.Dispatcher.postLocalMessage(Dispatcher.scala:135)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.ask(NettyRpcEnv.scala:229)
+	at org.apache.spark.rpc.netty.NettyRpcEndpointRef.ask(NettyRpcEnv.scala:523)
+	at org.apache.spark.rpc.RpcEndpointRef.ask(RpcEndpointRef.scala:63)
+	... 9 more
+19/12/01 19:05:08 INFO KMeans: Initialization with k-means|| took 46.251 seconds.
+19/12/01 19:05:09 INFO KMeans: Iterations took 1.116 seconds.
+19/12/01 19:05:09 INFO KMeans: KMeans converged in 3 iterations.
+19/12/01 19:05:09 INFO KMeans: The cost is 5.965030710179888E8.
+19/12/01 19:07:18 INFO KMeans: Initialization with k-means|| took 34.899 seconds.
+19/12/01 19:07:19 INFO KMeans: Iterations took 0.855 seconds.
+19/12/01 19:07:19 INFO KMeans: KMeans converged in 2 iterations.
+19/12/01 19:07:19 INFO KMeans: The cost is 6.305110550781618E8.
